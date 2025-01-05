@@ -1,0 +1,60 @@
+* {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    font-family: 'Courier New', Courier, monospace;
+    /* color: black; */
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('mycustomfont.woff2') format('woff2');
+}
+
+.heading1 {
+    color: brown;
+    background-color: black;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+h1 {
+    background-color: white;
+}
+
+#heading4 {
+    color: red;
+}
+
+p>span {
+    color: blue;
+    vertical-align: text-top;
+}
+
+.home {
+    color: green;
+}
+
+.nav>ul>li>a {
+    color: red;
+}
+
+.para {
+    text-indent: 300px !important;
+    color: chocolate;
+    text-align: justify;
+    /* box-shadow: rgba(0, 0, 0, 1) 0px 10px 50px; */
+}
+
+b {
+    color: inherit;
+}
+
+h4 {
+    /* color: lightblue; */
+    /* text-shadow: 10px 15px 20px red; */
+}
+
+.box {
+    text-align: center;
+    background-color: white;
+    margin: 30px;
+    text-shadow: 5px 10px 15px red;
+}

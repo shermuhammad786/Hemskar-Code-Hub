@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('fonts/chunkfive.woff');
+}
+
+.paragraph {
+    /* font-family: 'Rubik Vinyl'; */
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline;
+    line-height: 50px;
+    letter-spacing: 10px;
+    word-wrap: 1em;
+    text-align: justify;
+    text-indent: 40px;
+    /* text-shadow: 10px 15px 20px black; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    height: 200px;
+    width: 500px;
+    overflow: auto;
+}
+
+.paragraph:hover {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: left;
+}
+
+.paragraph:first-letter,
+.paragraph:first-line {
+    font-size: 2em;
+    color: red;
+}
+
+.paragraph:active {
+    background-color: black;
+    color: white;
+}
+
+a:link {
+    color: green !important;
+}
+
+a:visited {
+    color: red !important;
+    text-decoration: none !important;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 600px;
+    height: 50px;
+    min-width: 500px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background-color: yellowgreen;
+    color: white;
+    font-weight: 400;
+}
+
+.btn:active {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+
+.input:focus {
+    background-color: yellow;
+    color: blue;
+    font-weight: 400;
+    border: 5px solid red;
+    outline: none;
+}
+
+
+/* .paragraph::-webkit-scrollbar {
+    width: 20px;
+  } */
+
+/* Track */
+/* .paragraph::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  } */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  } */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  } */
+
+.container {
+    border-width: 4px;
+    border-color: blue;
+    border-style: solid;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    border: 2px dotted red;
+}
+
+.container>h1 {
+    text-align: center !important;
+
+}
