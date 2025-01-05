@@ -119,6 +119,7 @@ a:hover {
     padding: 40px;
     margin: 40px;
     width: 300px;
+    
     border: 2px dotted red;
 }
 
