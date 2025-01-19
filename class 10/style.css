@@ -1,0 +1,52 @@
+#bg {
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/bg.jpg");
+    background-position: left bottom;
+    animation-name: bgImage;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bgImage {
+    from {
+        background-position: left bottom;
+    }
+
+    to {
+        background-position: right bottom;
+    }
+}
+
+#car {
+    position: absolute;
+    bottom: -10px;
+    width: 200px;
+    height: 200px;
+    left: 400px;
+}
+
+#bike {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 0px;
+    left: 200px;
+    animation-name: bike;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bike {
+    from {
+        left: 200px;
+    }
+
+    to {
+        left: 700px;
+    }
+}
