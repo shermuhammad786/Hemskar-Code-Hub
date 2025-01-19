@@ -1,0 +1,199 @@
+.animation-container {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.box {
+    width: 70px;
+    height: 70px;
+}
+
+.box1 {
+    background-color: aqua;
+}
+
+.box1 {
+    animation-name: boxOne;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boxOne {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(300px);
+    }
+}
+
+.box2 {
+    background-color: gray;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes spin {
+    from {
+        /* transform: translate(0px); */
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* transform: translate(300px); */
+    }
+}
+
+.box3 {
+    background-color: green;
+    animation-name: boxThree;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boxThree {
+    from {
+        /* transform: translate(0px); */
+        /* transform: rotate(0deg); */
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(2);
+        /* transform: rotate(360deg); */
+        /* transform: translate(300px); */
+    }
+}
+
+.box4 {
+    background-color: lightblue;
+    animation: boxFour 2s ease-in-out 5s infinite alternate;
+}
+
+@keyframes boxFour {
+    from {
+        /* transform: translate(0px); */
+        /* transform: rotate(0deg); */
+        /* transform: scale(0); */
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(100px, 200px);
+        /* transform: scale(2); */
+        /* transform: rotate(360deg); */
+        /* transform: translate(300px); */
+    }
+}
+
+.box5 {
+    background-color: lightcoral;
+    animation: boxFive 2s ease-in-out infinite alternate;
+}
+
+@keyframes boxFive {
+    0% {
+        transform: translate(0px);
+        background-color: green;
+    }
+
+    40% {
+        transform: translate(130px, -180px);
+        background-color: blue;
+    }
+
+    70% {
+        transform: translate(230px, -220px);
+        background-color: red;
+    }
+
+    100% {
+        transform: translate(330px, -280px);
+        background-color: green;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    border: 2px solid red;
+    width: 90%;
+    height: 90vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.container div {
+    border: 2px solid green;
+}
+
+.nav {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    width: 100%;
+    height: 70px;
+    /* display: grid;
+    grid-template-columns: 20% 60% 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+
+}
+
+.body {
+    width: 100%;
+    height: 250px;
+}
+
+.navItem ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .container{
+
+        grid-template-columns: 1fr 2fr;
+    }
+}
