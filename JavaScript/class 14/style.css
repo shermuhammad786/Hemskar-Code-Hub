@@ -1,0 +1,28 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    border: 2px solid red;
+    background-color: aqua;
+
+}
+
+.nav {
+    list-style: none;
+}
+
+.navItems {
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+}
+
+.navItems:hover {
+    border-bottom: 3px solid black;
+}
+
+.home {
+    border-bottom: 3px solid black;
+    color: black;
+}
