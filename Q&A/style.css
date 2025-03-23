@@ -1,0 +1,11 @@
+.heading {
+    color: red !important;
+}
+
+.heading {
+    color: blue inherit;
+}
+
+.heading {
+    color: green;
+}
